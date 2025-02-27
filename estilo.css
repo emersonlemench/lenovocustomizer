@@ -1,0 +1,191 @@
+/* Eliminar botones de incremento en inputs number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ________________________ */
+/* Estilos base */
+body {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los contenedores se ajusten en varias filas */
+  gap: 5px; /* Espacio entre los contenedores */
+  padding: 5px; /* Espacio interno para que no se pegue a los bordes */
+}
+
+/* Contenedores flexibles */
+.contenedor {
+
+  border: solid 1px black;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 calc(33.333% - 10px); /* Flex-grow, flex-shrink, y flex-basis */
+  min-width: 150px; /* Ancho mínimo para evitar que se hagan demasiado pequeños */
+  box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+
+#contenedorCliente {
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+#contenedorCliente::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  background-image: url('./images/patron\ logo1.svg'); /* Reemplaza con la ruta de tu imagen */
+  background-repeat: repeat;
+  opacity: 0.15; /* Ajusta la opacidad según sea necesario */
+  z-index: 0; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+#contenedorCliente > * {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por encima del pseudo-elemento */
+}
+
+#contenedorCliente span{
+font-style: oblique;
+}
+
+
+/* Contenedores más grandes */
+.contenedor-grande {
+  flex: 1 1 calc(50% - 10px); /* Ocupa más espacio */
+  min-width: 200px; /* Ancho mínimo mayor */
+}
+
+/* Contenedores pequeños */
+.contenedor-pequeno {
+  flex: 1 1 calc(25% - 10px); /* Ocupa menos espacio */
+  min-width: 120px; /* Ancho mínimo menor */
+}
+
+/* Estilos para los elementos internos */
+.titulo h2 {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.caja h3 {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.medicion {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+  gap: 2px; /* Espacio entre los elementos */
+}
+
+.medicion .entrada {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.medicion label {
+  font-size: 12px;
+}
+
+.medicion input {
+  width: 50px;
+  height: 15px;
+  font-size: 12px;
+}
+
+select {
+  width: 100%;
+  height: 15px;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+/* Ajustes para el resumen del presupuesto */
+#total {
+  flex: 1 1 100%; /* Ocupa todo el ancho disponible */
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#total h2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#total p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+#total input {
+  width: 30px;
+}
+#extra {
+  width: 100px;
+}
+.extra {
+  margin-top: 20px;
+}
+#areaTexto {
+  border: none;
+}
+.reducida {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#recorreInput {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  height: 100px;
+  overflow-y: auto;
+  border: solid 1px #ccc;
+  padding: 5px;
+}
+.marcadeAgua{
+   display: none;
+}
+#recorreInput .entrada {
+  width: calc(50% - 5px); /* 50% del ancho menos el espacio del gap */
+  border: solid 1px black;
+  box-sizing: border-box; /* Incluye el borde en el ancho */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px; /* Espacio interno */
+}
+#recorreInput input {
+  width: 30px;
+}
+#recorreInput .entrada label {
+  width: 100px;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%; /* Asegura que el label no exceda el ancho del contenedor */
+}
+.salto-linea {
+  white-space: pre-line;
+}

@@ -1,0 +1,84 @@
+{
+  "bases": {
+    "acrilico": 90,
+    "pvc": 70,
+    "mdf": 16,
+    "polyfan": 38,
+    "espejado": 120,
+    "acrilicocolor": 91,
+    "chapa": 40,
+    "alucobond": 130
+  },
+  "iluminacion": {
+    "neon": 3.5,
+    "rgb": 6,
+    "pixel": 10,
+    "tira_led": 1.7,
+    "tira_led_rgb": 2.3,
+    "tira_led_pixel": 2.3,
+    "neon_360": 6,
+    "tubos": 5,
+    "liston_aluminio_led": 2.4,
+    "manguera_siliconada_cuadrada":2.4
+  },
+  "intervencion": {
+    "vinilo_impreso": 30,
+    "vinilo_corte": 4,
+    "polarizado": 10,
+    "pintura": 9,
+    "detalles": 9
+  },
+  "alimentacion": {
+    "sin_fuente":0,
+    "fuente2": 2.15,
+    "fuente5": 8.5,
+    "fuente10": 13,
+    "fuente20": 17,
+    "fuente30": 21,
+    "fuente40": 42,
+    "fuente60": 51
+  },
+  "accesorios": {
+    "mini_boton6a": 3,
+    "ruedita2-5a": 3,
+    "rueda_control16a": 2.5,
+    "bluetooth5a": 3,
+    "rgb24teclas": 19,
+    "rgb30a": 7,
+    "rgb50a": 19,
+    "ficha_12v_auto": 3.5,
+    "control_pixel_basico": 7.5,
+    "switch2": 5,
+    "secuenciador2": 8,
+    "secuenciador5": 9,
+    "secuenciador10": 10,
+    "embellecedores": 0.5,
+    "distanciadores": 1,
+    "lingas_acero": 2,
+    "ventosas": 1
+  },
+  "estructuras": {
+    "hierro": 2.3,
+    "pvc_revestido_aluminio": 16,
+    "mdf_fleje_de_cajas": 5,
+    "acrílico_liston": 5,
+    "mdf_aros": 5,
+    "angulo_l_aluminio": 16
+  },
+  "flejes": {
+    "trimcap": 5,
+    "fleje_aluminio": 8,
+    "fleje_plastico": 5,
+    "fleje_pvc5mm": 5,
+    "fleje_acrilico_3mm": 6
+  },
+  "adicionales": {
+    "sellado_exterior": 30,
+    "caja_exterior": 120,
+    "caja_mdf": 30,
+    "caja_pvc": 50
+  }
+}
+
+
+

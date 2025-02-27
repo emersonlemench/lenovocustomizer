@@ -1,0 +1,463 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Genérico</title>
+</head>
+
+<body>
+  <!-- <section> -->
+  <!-- <div class="contenedor">
+    <label for="">Ingrese precio dolar</label>
+    <input type="numb" id="dolarManual">
+  </div>
+    </section> -->
+  <main>
+
+    <!-- Inicio Base -->
+
+    <section class="contenedor" id="contenedorBase">
+      <div id="baselicius">
+        <div class="titulo">
+          <h2>material base</h2>
+        </div>
+
+        <div class="caja">
+          <h3>seleccione el material base</h3>
+        </div>
+        <div class="opciones">
+          <select name="" id="bases">
+            <option value="null">Seleccione una opción</option>
+            <option value="acrilico">acrilico</option>
+            <option value="pvc">pvc</option>
+            <option value="mdf">mdf</option>
+            <option value="polyfan">polyfan</option>
+            <option value="espejado">espejado</option>
+            <option value="acrilico-color">acrilico-color</option>
+            <option value="chapa">chapa</option>
+            <option value="alucobond">alucobond</option>
+          </select>
+        </div>
+        <div class="medicion">
+          <div class="entrada">
+            <label for="">ancho</label>
+            <input type="number" id="ancho">
+          </div>
+          <div class="entrada">
+            <label for="">alto</label>
+            <input type="number" id="alto">
+          </div>
+
+        </div>
+        <div class="entrada">
+          <label>
+            <hr>Precio Material:
+            <p id="subAcrilico"> wait...</p>
+            <hr>
+          </label>
+        </div>
+      </div>
+
+
+      <button id="agregarBases">+</button>
+
+    </section>
+
+
+
+    <!-- Final Base -->
+
+    <!-- Inicio Iluminación-->
+    <section class="contenedor" id="contenedorIluminacion">
+
+      <div id="iluminati">
+        <div class="titulo">
+          <h2>Iluminación</h2>
+        </div>
+        <div class="caja">
+          <h3>seleccione la iluminacion</h3>
+        </div>
+        <div class="opciones">
+          <select name="" id="iluminacion">
+            <option value="null">Seleccione una opción</option>
+            <option value="neon">neon</option>
+            <option value="rgb">rgb</option>
+            <option value="pixel">pixel</option>
+            <option value="tira_led">tira_led</option>
+            <option value="tira_led_rgb">tira_led_rgb</option>
+            <option value="tira_led_pixel">tira_led_pixel</option>
+            <option value="neon_360">neon_360</option>
+            <option value="tubos">tubos</option>
+            <option value="liston_aluminio_led">liston_aluminio_led</option>
+            <option value="manguera_siliconada_cuadrada">manguera_siliconada_cuadrada</option>
+          </select>
+        </div>
+        <div class="medicion">
+          <div class="entrada">
+            <label for="">metro lineal de iluminacion</label>
+            <input type="number" id="metroLinealIluminacion">
+          </div>
+
+        </div>
+        <div class="entrada">
+          <label>
+            <hr>Precio Material:
+            <p id="subIluminacion">wait...</p>
+            <hr>
+          </label>
+        </div>
+      </div>
+      <button id="masIluminacion">+</button>
+    </section>
+    <!-- Final Iluminación -->
+
+    <!-- inicio alimentacion -->
+    <section class="contenedor" id="contenedorAlimentacion">
+      <div id="energia">
+        <div class="titulo">
+          <h2>Fuente</h2>
+        </div>
+        <div class="caja">
+          <!-- <h3>LA FUENTE SE SUGIERE AUTOMATICAMENTE</h3> -->
+          <h3>Seleccione la fuente</h3>
+        </div>
+
+        <div class="opciones" id="selectFuente">
+          <select name="" id="fuente">
+            <option value="null" id="fuenteAutoasiganada">Seleccione una opción</option>
+            <option value="sin_fuente">sin_fuente</option>
+            <option value="fuente2">fuente2</option>
+            <option value="fuente5">fuente5</option>
+            <option value="fuente10">fuente10</option>
+            <option value="fuente20">fuente20</option>
+            <option value="fuente30">fuente30</option>
+            <option value="fuente40">fuente40</option>
+            <option value="fuente60">fuente60</option>
+          </select>
+        </div>
+        <div class="entrada">
+          <label>
+            <hr>Precio Material:
+            <p id="subFuente"> wait...</p>
+            <hr>
+          </label>
+        </div>
+      </div>
+      <button id="duplicarFuentes">+</button>
+
+    </section>
+    <!-- final alimentacion -->
+
+    <!-- Inicio de intervencion -->
+    <section class="contenedor" id="contenedorIntervencion">
+
+      <div id="interMilan">
+      <div class="titulo">
+        <h2>Intervneción (realce)</h2>
+      </div>
+      <div class="caja">
+        <h3>seleccione el material</h3>
+      </div>
+      <div class="opciones">
+        <select name="" id="intervencion">
+          <option value="null">Seleccione una opción</option>
+          <option value="vinilo_impreso">vinilo_impreso</option>
+          <option value="vinilo_corte">vinilo_corte</option>
+          <option value="polarizado">polarizado</option>
+          <option value="pintura">pintura</option>
+          <option value="detalles">detalles</option>
+        </select>
+      </div>
+      <div class="medicion">
+        <div class="entrada">
+          <label for="">ancho</label>
+          <input type="number" id="ancho1">
+        </div>
+        <div class="entrada">
+          <label for="">alto</label>
+          <input type="number" id="alto1">
+        </div>
+      </div>
+
+      <div class="entrada">
+        <label>
+          <hr>Precio Material:
+          <p id="subRealce"> wait...</p>
+          <hr>
+        </label>
+      </div>
+    </div>
+    <button id="agregarIntervencion">+</button>
+    </section>
+    <!-- final de intervencion -->
+
+    <!-- inicio accesorios -->
+    <section class="contenedor" id="contenedorAccesorios">
+      <div class="titulo">
+        <h2>Accesorios</h2>
+      </div>
+      <div class="caja">
+        <h3>Escriba la cantidad de cada accesorio que desea agregar</h3>
+      </div>
+      <div class="medicion reducida acc" id="recorreInput">
+
+        <div class="entrada ">
+          <label for="mini_boton6a"> mini_boton6a</label>
+          <input type="number" id="mini_boton6a">
+        </div>
+        <div class="entrada ">
+          <label for="ruedita2-5a"> ruedita2-5a</label>
+          <input type="number" id="ruedita2-5a">
+        </div>
+        <div class="entrada ">
+          <label for="rueda_control16a"> rueda_control16a</label>
+          <input type="number" id="rueda_control16a">
+        </div>
+        <div class="entrada ">
+          <label for="bluetooth5a"> bluetooth5a</label>
+          <input type="number" id="bluetooth5a">
+        </div>
+        <div class="entrada ">
+          <label for="rgb24teclas"> rgb24teclas</label>
+          <input type="number" id="rgb24teclas">
+        </div>
+        <div class="entrada ">
+          <label for="rgb30a"> rgb30a</label>
+          <input type="number" id="rgb30a">
+        </div>
+        <div class="entrada ">
+          <label for="rgb50a"> rgb50a</label>
+          <input type="number" id="rgb50a">
+        </div>
+        <div class="entrada ">
+          <label for="ficha_12v_auto"> ficha_12v_auto</label>
+          <input type="number" id="ficha_12v_auto">
+        </div>
+        <div class="entrada ">
+          <label for="control_pixel_basico"> control_pixel_basico</label>
+          <input type="number" id="control_pixel_basico">
+        </div>
+        <div class="entrada ">
+          <label for="switch2"> switch2</label>
+          <input type="number" id="switch2">
+        </div>
+        <div class="entrada ">
+          <label for="secuenciador2"> secuenciador2</label>
+          <input type="number" id="secuenciador2">
+        </div>
+        <div class="entrada ">
+          <label for="secuenciador5"> secuenciador5</label>
+          <input type="number" id="secuenciador5">
+        </div>
+        <div class="entrada ">
+          <label for="secuenciador10"> secuenciador10</label>
+          <input type="number" id="secuenciador10">
+        </div>
+        <div class="entrada ">
+          <label for="embellecedores"> embellecedores</label>
+          <input type="number" id="embellecedores">
+        </div>
+        <div class="entrada ">
+          <label for="distanciadores"> distanciadores</label>
+          <input type="number" id="distanciadores">
+        </div>
+        <div class="entrada ">
+          <label for="lingas_acero"> lingas_acero</label>
+          <input type="number" id="lingas_acero">
+        </div>
+        <div class="entrada ">
+          <label for="ventosas"> ventosas</label>
+          <input type="number" id="ventosas">
+        </div>
+
+      </div>
+      <div class="entrada">
+        <label>
+          <hr>Precio Material:
+          <p id="subAccesorios"> wait...</p>
+          <hr>
+        </label>
+      </div>
+    </section>
+
+    <!-- final accesorios -->
+
+    <!-- inicio estructuras -->
+    <section class="contenedor" id="contenedorEstructuras">
+      <div id="fierros">
+      <div class="titulo">
+        <h2>Estructuras</h2>
+      </div>
+      <div class="caja">
+        <h3>seleccione la Estructura</h3>
+      </div>
+      <div class="opciones">
+        <select name="" id="estructura">
+          <option value="null">Seleccione una opción</option>
+          <option value="hierro">hierro</option>
+          <option value="pvc_revestido_aluminio">pvc_revestido_aluminio</option>
+          <option value="mdf_fleje_de_cajas">mdf_fleje_de_cajas</option>
+          <option value="acrílico_liston">acrílico_liston</option>
+          <option value="mdf_aros">mdf_aros</option>
+          <option value="angulo_l_aluminio">angulo_l_aluminio</option>
+        </select>
+      </div>
+      <div class="medicion">
+        <div class="entrada">
+          <label for="">metro lineal de estructura</label>
+          <input type="number" id="metroLinealEstructura">
+        </div>
+
+      </div>
+
+      <div class="entrada">
+        <label>
+          <hr>Precio Material:
+          <p id="subEstructura">wait...</p>
+          <hr>
+        </label>
+      </div>
+    </div>
+    <button id="agregarEstructura">+</button>
+    </section>
+    <!-- fin estructuras -->
+
+    <!-- inicio flejes -->
+    <section class="contenedor" id="contenedorFlejes">
+      <div id="flejitos">
+      <div class="titulo">
+        <h2>Flejes</h2>
+      </div>
+      <div class="caja">
+        <h3>seleccione un fleje</h3>
+      </div>
+      <div class="opciones">
+        <select name="" id="flejes">
+          <option value="null">Seleccione una opción</option>
+          <option value="trimcap">trimcap</option>
+          <option value="fleje_aluminio">fleje_aluminio</option>
+          <option value="fleje_plastico">fleje_plastico</option>
+          <option value="fleje_pvc5mm">fleje_pvc5mm</option>
+          <option value="fleje_acrilico_3mm">fleje_acrilico_3mm</option>
+        </select>
+      </div>
+      <div class="medicion">
+        <div class="entrada">
+          <label for="">metro lineal de fleje</label>
+          <input type="number" id="metroLinealFlejes">
+        </div>
+
+      </div>
+
+      <div class="entrada">
+        <label>
+          <hr>Precio Material:
+          <p id="subFleje">wait...</p>
+          <hr>
+        </label>
+      </div>
+    </div>
+    <button id="agregarFleje">+</button>
+    </section>
+    <!-- fin flejes -->
+
+
+
+    <section class="contenedor" id="contenedorExtra">
+      <h3>Agregue costos extra</h3>
+
+      <div class="entrada">
+        <div class="extra">
+          <label for="">EXTRA</label>
+          <input type="number" step="0.01" id="extra">
+        </div>
+      </div>
+    
+
+
+    </section>
+    <!-- fin adicionales -->
+
+    <!-- inicio de totales -->
+    <section class="contenedor" id="contenedorResumen">
+      <div id="total">
+        <h2 id="clickCliente">Resumen de <span>NeonFLex</span></h2>
+
+        <p id="costo"><strong>Costo Total: $</strong> <span id="costoTotal"></span></p>
+
+        <p class="porcentaje">
+          <strong>Ganancia: %</strong>
+          <input type="number" id="porcentaje1" value="100" /><strong>: $</strong><span id="ganancia"></span>
+        </p>
+
+        <p class="porcentaje">
+          <strong>Entrega rápida/Costos fijos/extras: %</strong>
+          <input type="number" id="porcentaje2" value="100" /><strong>: $</strong>  <span id="extras"></span>
+        </p>
+
+        <p id="efectivo">
+          <strong>TOTAL EFECTIVO: $</strong> <span id="totalEfectivo"></span>
+        </p>
+
+        <p id="factura"><strong>TOTAL CON IVA: $</strong> <span id="totalConIVA"></span></p>
+
+        <p id="tdc">
+          <strong>TOTAL IVA + TARJETA DE CRÉDITO: $</strong>
+          <span id="totalIVATC"></span>
+        </p>
+
+        <p id="tdc3">
+          <strong>3 PAGOS CON TARJETA DE CRÉDITO de: $</strong>
+          <span id="pagoTC3"></span>
+        </p>
+
+        <p id="tdc6">
+          <strong>6 PAGOS CON TARJETA DE CRÉDITO de: $</strong>
+          <span id="pagoTC6"></span>
+        </p>
+
+        <p id="gremio">
+          <strong>PRECIO GREMIO / MAYORISTA: $</strong>
+          <span id="precioGremio">$0</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- presupuesto para cliente -->
+    <section class="contenedor" id="contenedorCliente">
+      <div id="total">
+        <h2 id="clickCliente">Presupuesto para:<span id="cliente"></span></h2>
+        <p id="efectivo">
+          <strong>TOTAL EFECTIVO: $</strong> <span id="totalEfectivoCliente"></span>
+        </p>
+
+        <p id="factura"><strong>TOTAL CON IVA: $</strong> <span id="totalConIVACliente"></span></p>
+
+        <p id="tdcCliente">
+          <strong>TOTAL IVA + TARJETA DE CRÉDITO: $</strong>
+          <span id="totalIVATCCliente"></span>
+        </p>
+
+        <p id="tdc3Cliente">
+          <strong>3 PAGOS CON TARJETA DE CRÉDITO de: $</strong>
+          <span id="pagoTC3Cliente"></span>
+        </p>
+
+        <p id="tdc6Cliente">
+          <strong>6 PAGOS CON TARJETA DE CRÉDITO de: $</strong>
+          <span id="pagoTC6Cliente"></span>
+        </p>
+      </div>
+
+    </section>
+    <!-- fin presupuesto para cliente -->
+
+    <!-- fin de totales -->
+  </main>
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
